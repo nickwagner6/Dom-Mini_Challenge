@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dom Lab1</title>
+  </head>
+  <body>
+    <h1>Dom Mini Challenge</h1>
+    <section class="vending-machine">
+      <p class="total-paragraph">Total: $0.00</p>
+      <button data-amount="2" class="button lime">Lime Cola $2.00</button>
+      <button data-amount="3" class="button peanuts">
+        Salted Peanuts $3.00
+      </button>
+      <button data-amount="4" class="button chocolate">
+        Chocolate Bar $4.00
+      </button>
+      <button data-amount="6" class="button gummies">
+        Fruit Gummies $6.00
+      </button>
+    </section>
+    <section class="make-money">
+      <form class="money-form">
+        <label for="count">How Many?</label>
+        <input type="number" name="count" id="count" />
+        <label for="type">Which Coin?</label>
+        <select name="type" id="type">
+          <option value="penny">Penny</option>
+          <option value="nickle">Nickle</option>
+          <option value="dime">Dime</option>
+          <option value="quarter">Quarter</option>
+        </select>
+        <button>Make Money!</button>
+      </form>
+      <div class="coin-container"></div>
+    </section>
+    <section class="light-bulb-container">
+      <div class="light-bulb"></div>
+      <button class="switch on">On</button>
+      <button class="switch off">Off</button>
+      <button class="switch toggle">Toggle</button>
+      <button class="switch end">End</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
